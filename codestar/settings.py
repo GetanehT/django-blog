@@ -11,8 +11,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-import os
 import dj_database_url
+import os
+
 if os.path.isfile('env.py'):
     import env
 
@@ -85,9 +86,9 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
     #}
 #}
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-
-
+    'default': dj_database_url.parse(
+        os.environ.get('DATABASE_URL', 'postgres://u0bgfaimj5q:lbNQ7WuJmLUv@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/bloat_thong_charm_427359')
+    )
 }
 
 # Password validation
