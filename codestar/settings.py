@@ -14,6 +14,7 @@ from pathlib import Path
 import dj_database_url
 import os
 
+
 if os.path.isfile('env.py'):
     import env
 
@@ -30,7 +31,8 @@ SECRET_KEY = 'django-insecure-5q+$9s#2-i=+y9!pak(9z!^xd8o7vf^&i7f23-sh$(2#rm)up^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-getaneht-djangoblog-xcpfzd7xj0e.ws.codeinstitute-ide.net',".herokuapp.com"]
+#ALLOWED_HOSTS = ['8000-getaneht-djangoblog-xcpfzd7xj0e.ws.codeinstitute-ide.net',".herokuapp.com", 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['8000-getaneht-djangoblog-pw6b6gmv3rj.ws.codeinstitute-ide.net']
 
 
 # Application definition
@@ -90,6 +92,11 @@ DATABASES = {
         os.environ.get('DATABASE_URL', 'postgres://u0bgfaimj5q:lbNQ7WuJmLUv@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/bloat_thong_charm_427359')
     )
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com"
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
