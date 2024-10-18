@@ -90,9 +90,7 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
     #}
 #}
 DATABASES = {
-    'default': dj_database_url.parse(
-        os.environ.get('DATABASE_URL', 'postgres://u0bgfaimj5q:lbNQ7WuJmLUv@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/bloat_thong_charm_427359')
-    )
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 CSRF_TRUSTED_ORIGINS = [
