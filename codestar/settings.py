@@ -32,9 +32,7 @@ DEBUG = True
 
 #ALLOWED_HOSTS = ['8000-getaneht-djangoblog-xcpfzd7xj0e.ws.codeinstitute-ide.net',".herokuapp.com", 'localhost', '127.0.0.1']
 #ALLOWED_HOSTS = ['8000-getaneht-djangoblog-pw6b6gmv3rj.ws.codeinstitute-ide.net']
-ALLOWED_HOSTS = ['127.0.0.1', 
-    'localhost', 
-    '8000-getaneht-djangoblog-tbggnylzyux.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-getaneht-djangoblog-tbggnylzyux.ws.codeinstitute-ide.net', 'django-blog-apps-6385662f546f.herokuapp.com','127.0.0.1',  'localhost']
 
 
 # Application definition
